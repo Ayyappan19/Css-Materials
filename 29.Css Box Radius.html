@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+body{
+    background-color: black;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 20px auto;
+    padding: 5px;
+}
+#lt{
+    box-shadow: -5px -5px #666666;
+    border-radius: 10px;
+}
+#br{
+    box-shadow: 5px 5px 5px  #666666;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#brs{
+    box-shadow: 5px 5px 5px 8px #666666;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#os{
+    box-shadow: 0 0 30px #666666;
+    border-radius: 5px 10px 15px 20px;
+}
+#i{
+    box-shadow: inset 0 0 30px #666666;
+    border-radius: 100px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 100px;
+}
+
+    </style>
+</head>
+<body>
+    
+
+<h1>Box Shadow Property</h1>
+
+<div id="lt">Top Left</div>
+<div id="br">Bottom Right</div>
+<div id="brs">Bottom Right Spread</div>
+<div id="os">Outer Spread</div>
+<div id="i">Insert</div>
+
+</body>
+</html>
